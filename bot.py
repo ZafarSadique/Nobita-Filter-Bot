@@ -9,7 +9,6 @@ from datetime import date, datetime
 import asyncio
 import pytz
 from aiohttp import web
-from plugins import web_server, check_expired_premium
 import time
 
 class Bot(Client):
@@ -37,7 +36,6 @@ class Bot(Client):
         temp.B_NAME = me.first_name
         temp.B_LINK = me.mention
         self.username = '@' + me.username
-        self.loop.create_task(check_expired_premium(self))
         print(f"{me.first_name} is started now ❤️")
         tz = pytz.timezone('Asia/Kolkata')
         today = date.today()
