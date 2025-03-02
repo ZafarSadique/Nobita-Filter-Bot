@@ -83,13 +83,12 @@ User - {}"""
 
 <code>/font hi how are you</code>""
    
-    EARN_TEXT = """<b><i><blockquote>HOW TO EARN MONEY BY THIS BOT 💰</blockquote>
+    EARN_TEXT = """<b><i><block
+›› sᴛᴇᴘ 𝟷 : ʏᴏᴜ ᴍᴜsᴛ ʜᴀᴠᴇ ᴀᴛʟᴇᴀsᴛ ᴏɴᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴍɪɴɪᴍᴜᴍ 𝟹𝟶𝟶 ᴍᴇᴍʙᴇʀs.
 
->> STEP 1 : YOU MUST HAVE AT LEAST ONE GROUP WITH A MINIMUM OF 300 MEMBERS.
+›› sᴛᴇᴘ 𝟸 : ᴍᴀᴋᴇ <a href=https://telegram.me/{}</a> ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
 
->> STEP 2 : MAKE <a href=https://telegram.me/{}</a> ADMIN IN YOUR GROUP.
-
->> STEP 3 : MAKE AN ACCOUNT ON <a href='https://tnshort.net/ref/devilofficial'>TNLINK</a> OR <a href='https://onepagelink.in/ref/Nobita'>ONEPAGELINK</a>. [ YOU CAN ALSO USE OTHER SHORTENER WEBSITES ]
+›› sᴛᴇᴘ 𝟹 : ᴍᴀᴋᴇ ᴀᴄᴄᴏᴜɴᴛ ᴏɴ <a href='https://tnshort.net/ref/devilofficial'>ᴛɴʟɪɴᴋ</a> ᴏʀ <a href='https://onepagelink.in/ref/Nobita'>ᴏɴᴇᴘᴀɢᴇʟɪɴᴋ</a>. [ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴜsᴇ ᴏᴛʜᴇʀ sʜᴏʀᴛɴᴇʀ ᴡᴇʙsɪᴛᴇ ]
 
 ›› sᴛᴇᴘ 𝟺 : ɴᴏᴡ ꜱᴇᴛ ʏᴏᴜʀ ꜱʜᴏʀᴛɴᴇʀ, ᴛᴜᴛᴏʀɪᴀʟ, ꜰꜱᴜʙ ᴀɴᴅ ʟᴏɢ ᴄʜᴀɴɴᴇʟ.
 
@@ -98,7 +97,6 @@ User - {}"""
 ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴠᴀʟᴜᴇꜱ ʙʏ /ginfo ᴄᴏᴍᴍᴀɴᴅ.
 
 💯 ɴᴏᴛᴇ - ᴛʜɪs ʙᴏᴛ ɪs ꜰʀᴇᴇ ᴛᴏ ᴀʟʟ, ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴀɴᴅ ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ.</i></b>"""
-
     VERIFICATION_TEXT = """<b>ʜʏ {} {},
 
 ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ᴛᴏᴅᴀʏ 😐
