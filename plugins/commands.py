@@ -76,8 +76,8 @@ async def start(client:Client, message):
         buttons = [[
             InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features'),
-         ],[
+            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features') 
+        ],[
             InlineKeyboardButton('🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫', callback_data='earn')
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -103,7 +103,7 @@ async def start(client:Client, message):
         buttons = [[
             InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features'),
+            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features'),          
         ],[
             InlineKeyboardButton('🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫', callback_data='earn')
         ]]
@@ -226,9 +226,7 @@ async def start(client:Client, message):
         size = get_size(files.file_size)
         btn = [[
             InlineKeyboardButton("✅ ꜰɪʟᴇ ✅", url=link),
-            InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ⁉️", url=settings['tutorial'])
-        ],[
-            InlineKeyboardButton("😁 ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ꜰɪʟᴇꜱ 😁", callback_data='buy_premium')
+            InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ⁉️", url=settings['tutorial']
         ]]
         await message.reply(f"<b>ʜʏ {mention} {wish},</b>\n\n📂 𝐍𝐚𝐦𝐞 ➠  <code>{name}</code>\n\n♻️ 𝐒𝐢𝐳𝐞 ➠  {size}\n\n<b><i>ʏᴏᴜʀ ꜰɪʟᴇ ɪꜱ ʀᴇᴀᴅʏ, ᴘʟᴇᴀꜱᴇ ɢᴇᴛ ᴜꜱɪɴɢ ᴛʜɪꜱ ʟɪɴᴋ 😋.</i></b>", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
         return
