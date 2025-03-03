@@ -56,7 +56,7 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "120"))
 # languages search
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
-auth_channel = environ.get('AUTH_CHANNEL', '')
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL','')) 
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
 
 # bot settings
