@@ -76,8 +76,8 @@ async def start(client:Client, message):
         buttons = [[
             InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features')    
-        ],[
+            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features'),
+         ],[
             InlineKeyboardButton('🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫', callback_data='earn')
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -86,7 +86,20 @@ async def start(client:Client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-            
+
+    if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help", "buy_premium"]:
+        if message.command[1] == "buy_premium":
+            btn = [[
+                InlineKeyboardButton('📸 sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ 📸', url=USERNAME)
+            ],[
+                InlineKeyboardButton('🗑 ᴄʟᴏsᴇ 🗑', callback_data='close_data')
+            ]]            
+            await message.reply_photo(
+                photo=(QR_CODE),
+                caption=script.PREMIUM_TEXT.format(message.from_user.mention),
+                reply_markup=InlineKeyboardMarkup(btn)
+            )
+            return
         buttons = [[
             InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
@@ -111,7 +124,7 @@ async def start(client:Client, message):
     settings = await get_settings(int(data.split("_", 2)[1]))
     id = settings.get('fsub_id', AUTH_CHANNEL)
     channel = int(id)
-    if settings.get('fsub_id', AUTH_CHANNEL) and not await is_subscribed(client, message.fm_user.id, channel):
+    if settings.get('fsub_id', AUTH_CHANNEL) and not await is_subscribed(client, message.from_user.id, channel):
         invite_link = await client.create_chat_invite_link(channel)
         btn = [[
                 InlineKeyboardButton("⛔️ ᴊᴏɪɴ ɴᴏᴡ ⛔️", url=invite_link.invite_link)
